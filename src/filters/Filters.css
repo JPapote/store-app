@@ -1,0 +1,21 @@
+.filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.filters__item{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+   .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+   }
+  
+}

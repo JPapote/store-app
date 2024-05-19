@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { FiltersProvider } from './contexts/filters';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <FiltersProvider>
+      <App />
+    </FiltersProvider>
   </React.StrictMode>
 );
 
